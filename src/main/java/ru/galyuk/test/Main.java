@@ -5,11 +5,12 @@ import ru.galyuk.test.processor.HtmlProcessor;
 import java.util.Map;
 
 public class Main {
+
     public static void main(String[] args) {
         HtmlLoader htmlLoader = new HtmlLoader();
 
         if (args.length < 1) {
-            System.out.println("Не указан параметр URL!");
+            System.out.println("Не указан параметр URL! (смотреть 'readme.md')");
         }
         String htmlStr = htmlLoader.loadHtml(args[0]);
 
