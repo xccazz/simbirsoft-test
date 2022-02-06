@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="626bc568-1bc6-402b-8b67-66fc8e86cee3" name="Changes" comment="add readme">
-      <change afterPath="$PROJECT_DIR$/src/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logger/FileLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/galyuk/test/logger/FileLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/galyuk/test/loader/HtmlLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/galyuk/test/loader/HtmlLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/galyuk/test/processor/HtmlProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/galyuk/test/processor/HtmlProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/galyuk/test/processor/HtmlProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/galyuk/test/processor/HtmlProcessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simbirsoft.log" beforeDir="false" afterPath="$PROJECT_DIR$/simbirsoft.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/galyuk/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/galyuk/test/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,18 +59,18 @@
       <recent name="C:\Users\Илья\IdeaProjects\simbirsoft-test\src\test\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Илья\IdeaProjects\simbirsoft-test" />
       <recent name="C:\Users\Илья\IdeaProjects\simbirsoft-test\src" />
       <recent name="C:\Users\Илья\IdeaProjects\simbirsoft-test\src\main\java" />
       <recent name="C:\Users\Илья\IdeaProjects\simbirsoft-test\src\main" />
       <recent name="C:\Users\Илья\IdeaProjects\simbirsoft-test\src\test\java" />
-      <recent name="C:\Users\Илья\IdeaProjects\simbirsoft-test\src\test" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.galyuk.test" />
       <recent name="logger" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HtmlProcessorTest">
+  <component name="RunManager" selected="JUnit.HtmlProcessorTest.processHtmlTest (1)">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.galyuk.test.Test" />
       <module name="simbirsoft-test" />
@@ -150,9 +148,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HtmlProcessorTest.processHtmlTest (1)" />
         <item itemvalue="JUnit.HtmlProcessorTest" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="JUnit.HtmlProcessorTest.processHtmlTest (1)" />
         <item itemvalue="JUnit.HtmlLoaderTest" />
         <item itemvalue="JUnit.HtmlLoaderTest.loadHtml2" />
       </list>
@@ -188,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644136431554</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add readme">
+      <created>1644139887704</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644139887704</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

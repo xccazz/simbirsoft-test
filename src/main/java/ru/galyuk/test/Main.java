@@ -2,6 +2,7 @@ package ru.galyuk.test;
 
 import ru.galyuk.test.loader.HtmlLoader;
 import ru.galyuk.test.processor.HtmlProcessor;
+
 import java.io.*;
 import java.util.Map;
 import java.util.Scanner;
@@ -13,12 +14,15 @@ public class Main {
         PrintStream ps = new PrintStream(System.out, Boolean.parseBoolean(encoding));
 
         HtmlLoader htmlLoader = new HtmlLoader();
+
+        if (args.length < 1) {
+            System.out.println("Не указан параметр URL!");}
+
         String htmlStr = htmlLoader.loadHtml(args[0]);
 
         HtmlProcessor htmlProcessor = new HtmlProcessor();
         Map<String, Integer> htmlProc = htmlProcessor.processHtml(htmlStr);
         System.out.println(prepareResult(htmlProc));
-
     }
 
     private static String prepareResult(Map<String, Integer> statistic) {
