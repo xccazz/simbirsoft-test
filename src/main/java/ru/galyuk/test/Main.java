@@ -2,10 +2,7 @@ package ru.galyuk.test;
 
 import ru.galyuk.test.loader.HtmlLoader;
 import ru.galyuk.test.processor.HtmlProcessor;
-
-import java.io.*;
 import java.util.Map;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
