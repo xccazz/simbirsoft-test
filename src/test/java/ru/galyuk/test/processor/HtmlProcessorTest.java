@@ -3,7 +3,6 @@ package ru.galyuk.test.processor;
 import logger.FileLogger;
 import org.junit.Assert;
 import org.junit.Test;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -26,6 +25,7 @@ public class HtmlProcessorTest {
     }
 
     private String getHtmlFromResource(String path) {
+        FileLogger.log(">> String getHtmlFromResource(String path)");
         StringBuilder sb = new StringBuilder();
         try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
             String line;
@@ -36,6 +36,7 @@ public class HtmlProcessorTest {
             e.printStackTrace();
             FileLogger.logError("в getHtmlFromResource(String path)", e);
         }
+        FileLogger.log("<< String getHtmlFromResource(String path)");
         return sb.toString();
     }
 }

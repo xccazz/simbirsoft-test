@@ -2,27 +2,21 @@ package ru.galyuk.test;
 
 import ru.galyuk.test.loader.HtmlLoader;
 import ru.galyuk.test.processor.HtmlProcessor;
-import sun.misc.IOUtils;
-
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.net.URL;
+import java.io.*;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Main {
-
-    // private static final String TARGET_URL = "https://www.simbirsoft.com/";
-
     public static void main(String[] args) {
+        String encoding = System.getProperty("console.encoding", "utf-8");
+        Scanner sc = new Scanner(System.in, encoding);
+        PrintStream ps = new PrintStream(System.out, Boolean.parseBoolean(encoding));
+
         HtmlLoader htmlLoader = new HtmlLoader();
         String htmlStr = htmlLoader.loadHtml(args[0]);
 
         HtmlProcessor htmlProcessor = new HtmlProcessor();
         Map<String, Integer> htmlProc = htmlProcessor.processHtml(htmlStr);
-     //   String.getBytes(your_string.getBytes('Cp866'),'Cp1251');
-
         System.out.println(prepareResult(htmlProc));
 
     }

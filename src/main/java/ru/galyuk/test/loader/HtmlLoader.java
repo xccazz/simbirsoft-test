@@ -1,7 +1,6 @@
 package ru.galyuk.test.loader;
 
 import logger.FileLogger;
-
 import java.io.*;
 import java.net.URL;
 
@@ -14,10 +13,8 @@ public class HtmlLoader {
 
         try {
             URL simbirsoftURL = new URL(url);
-
             InputStream inputStream = simbirsoftURL.openStream();
             br = new BufferedReader(new InputStreamReader(inputStream));
-
             String inputLine;
             while ((inputLine = br.readLine()) != null) {
                 result.append(inputLine);

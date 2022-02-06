@@ -1,7 +1,6 @@
 package ru.galyuk.test.processor;
 
 import logger.FileLogger;
-
 import java.util.*;
 
 public class HtmlProcessor {
@@ -20,7 +19,6 @@ public class HtmlProcessor {
             if (!contains) {
                 sb.append(c);
             }
-
             if (contains || i == html.length() - 1) {
                 String word = sb.toString();
                 if (result.containsKey(word)) {
