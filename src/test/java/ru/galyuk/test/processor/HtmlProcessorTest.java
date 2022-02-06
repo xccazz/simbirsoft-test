@@ -15,7 +15,7 @@ public class HtmlProcessorTest {
         Map<String, Integer> result = htmlProcessor.processHtml(getHtmlFromResource("src/test/resources/htmlTest.html"));
         Assert.assertEquals(59, result.size());
         Assert.assertTrue(result.containsKey("Здесь"));
-        Assert.assertEquals(new Integer(1), result.get("нет"));
+        Assert.assertEquals(Integer.valueOf(1), result.get("нет"));
         Assert.assertFalse(result.containsKey(""));
     }
 

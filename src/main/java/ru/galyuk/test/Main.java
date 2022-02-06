@@ -9,15 +9,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String encoding = System.getProperty("console.encoding", "utf-8");
-        Scanner sc = new Scanner(System.in, encoding);
-        PrintStream ps = new PrintStream(System.out, Boolean.parseBoolean(encoding));
-
         HtmlLoader htmlLoader = new HtmlLoader();
 
         if (args.length < 1) {
-            System.out.println("Не указан параметр URL!");}
-
+            System.out.println("Не указан параметр URL!");
+        }
         String htmlStr = htmlLoader.loadHtml(args[0]);
 
         HtmlProcessor htmlProcessor = new HtmlProcessor();
