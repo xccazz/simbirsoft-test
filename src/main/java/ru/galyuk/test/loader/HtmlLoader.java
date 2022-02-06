@@ -1,13 +1,13 @@
 package ru.galyuk.test.loader;
 
-import logger.FileLogger;
+import ru.galyuk.test.logger.FileLogger;
 import java.io.*;
 import java.net.URL;
 
 public class HtmlLoader {
 
     public String loadHtml(String url) {
-        FileLogger.log(">> String loadHtml(String url)");
+        FileLogger.log(">>  loadHtml()");
         StringBuilder result = new StringBuilder();
         BufferedReader br = null;
 
@@ -21,7 +21,7 @@ public class HtmlLoader {
             }
         } catch (IOException exception) {
             exception.printStackTrace();
-            FileLogger.logError("в String loadHtml(String url)" , exception);
+            FileLogger.logError("во время получения HTML" , exception);
         } finally {
             try {
                 if (br != null) {
@@ -29,10 +29,10 @@ public class HtmlLoader {
                 }
             } catch (IOException e) {
                 e.printStackTrace();
-                FileLogger.logError("в String loadHtml(String url)", e);
+                FileLogger.logError("во время получения HTML", e);
             }
         }
-        FileLogger.log("<< String loadHtml(String url)");
+        FileLogger.log("<< loadHtml()");
         return result.toString();
     }
 }

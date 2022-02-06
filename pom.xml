@@ -23,8 +23,6 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <!--                            <addClasspath>true</addClasspath>-->
-                            <!--                            <classpathPrefix>lib/</classpathPrefix>-->
                             <mainClass>ru.galyuk.test.Main</mainClass>
                         </manifest>
                     </archive>

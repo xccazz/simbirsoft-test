@@ -1,6 +1,6 @@
 package ru.galyuk.test.processor;
 
-import logger.FileLogger;
+import ru.galyuk.test.logger.FileLogger;
 import java.util.*;
 
 public class HtmlProcessor {
@@ -8,7 +8,7 @@ public class HtmlProcessor {
     private static final List<Character> DELIMITER_LIST = Arrays.asList(' ', ',', '.', '!', '?', '"', ';', ':', '[', ']', '(', ')', '\n', '\r', '\t', '<', '/', '>', '}', '-', '_', '=', '{', '#', '&', '*', '{', '^', '$', '+', '—', '|', '\'', '\\');
 
     public Map<String, Integer> processHtml(String html) {
-        FileLogger.log(">> Map<String, Integer> processHtml(String html)");
+        FileLogger.log(">> processHtml()");
         Map<String, Integer> result = new HashMap<>();
         StringBuilder sb = new StringBuilder();
 
@@ -29,7 +29,7 @@ public class HtmlProcessor {
                 sb = new StringBuilder();
             }
         }
-        FileLogger.log("<< Map<String, Integer> processHtml(String html)");
+        FileLogger.log("<< processHtml()");
         return result;
     }
 }

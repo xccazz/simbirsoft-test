@@ -1,4 +1,4 @@
-package logger;
+package ru.galyuk.test.logger;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
